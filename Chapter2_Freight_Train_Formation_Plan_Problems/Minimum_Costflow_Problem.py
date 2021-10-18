@@ -1,31 +1,46 @@
+# 参考文档： http://www.360doc.com/content/21/0212/15/13328254_961769070.shtml Python+Gurobi求解最大流问题
 import gurobipy as gp
+from gurobipy import GRB
 
+# Input the information of the network
+
+# 添加了虚拟供应节点与虚拟需求节点
+dict_capacity = {(0, 1): 99999,
+                 (1, 2): 70, (1, 3): 100, (1, 4): 90,
+                 (2, 6): 80,
+                 (3, 4): 40, (3, 5): 70,
+                 (4, 5): 40, (4, 6): 100,
+                 (5, 6): 90,
+                 (6, 7): 99999
+                 }
+
+arc, capacity = gp.multidict(dict_capacity)
+
+# Construct the model
 m = gp.Model("MCP")
 
-c_uv = [[0, 1, 2, 0, 0],
-        [0, 0, 1, 2, 2],
-        [0, 0, 0, 1, 2],
-        [0, 0, 0, 0, 0],
-        [0, 0, 0, 3, 0],
-        [0, 0, 0, 0, 0]]
+# Decision variables
+X = m.addVars(arc, name='X')
 
-w_uv = [[9999, 300, 300, 9999, 9999],
-        [9999, 9999, 500, 400, 300],
-        [9999, 9999, 9999, 100, 200],
-        [9999, 9999, 9999, 9999, 9999],
-        [9999, 9999, 9999, 300, 9999],
-        [9999, 9999, 9999, 9999, 9999]]
+# Add constraints
+for i, j in arc:
+    # The volume of flow cannot exceed the capacity of the arc
+    m.addConstr(X[i, j] <= capacity[i, j])
+    if i == 0 or j == 7:
+        continue
+    else:
+        # Flow balance constraint
+        m.addConstr(X.sum(i, '*') == X.sum('*', i))
 
-x = m.addVars(16, 16, vtype=gp.GRB.BINARY, name='x')
+# Define the objective function
+m.setObjective(X.sum(1, '*'), sense=GRB.MAXIMIZE)
 
-m.setObjective(gp.quicksum(C_ij[i][j] * x[i, j] for i in range(16) for j in range(16)),
-               gp.GRB.MINIMIZE)
-
-m.addConstrs(
-    (gp.quicksum(x[i, j] - x[j, i] for j in range(16)) == 1) for i in range(1))
-m.addConstrs(
-    (gp.quicksum(x[i, j] - x[j, i] for j in range(16)) == -1) for i in range(15, 16))
-m.addConstrs(
-    (gp.quicksum(x[i, j] - x[j, i] for j in range(16)) == 0) for i in range(1, 15))
+# Solve the model
 m.optimize()
-print("\n###########################\nObj:", m.objVal)
+
+# Output the results
+print('*' * 60)
+print("The objective value is：", m.objVal)
+print('The flow in each arc is:')
+for i, j in arc:
+    print("Node %d --&gt; Node %d: %d" % (i, j, X[i, j].x))
