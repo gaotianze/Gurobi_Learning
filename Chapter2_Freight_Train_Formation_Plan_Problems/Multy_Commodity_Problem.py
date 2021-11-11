@@ -10,10 +10,10 @@ dict = {
     (1, 4, 6): [5, 500],
     (1, 5, 4): [3, 300], (1, 5, 6): [1, 100],
 
-    (2, 1, 2): [1, 300], (2, 1, 3): [2, 300],
+    (2, 1, 2): [2, 400], (2, 1, 3): [1, 300],
     (2, 2, 3): [1, 500], (2, 2, 4): [2, 400], (2, 2, 5): [2, 300],
     (2, 3, 4): [1, 100], (2, 3, 5): [2, 200],
-    (2, 4, 6): [5, 500],
+    (2, 4, 6): [2, 500],
     (2, 5, 4): [3, 300], (2, 5, 6): [1, 100]
 }
 
@@ -23,11 +23,13 @@ arcs, capacity, cost = gp.multidict(dict)
 m = gp.Model('MCP')
 
 # Create variables
-x = m.addVars(arcs, vtype=GRB.INTEGER, name="x")
+x = m.addVars(arcs, vtype=GRB.INTEGER, name="x", obj=cost)
 
-for k, i, j in arcs:
+# m.setObjective(gp.quicksum(cost[k, i, j] * x[k, i, j] for (k, i, j) in arcs), GRB.MINIMIZE)
+
+for _, i, j in arcs:
     # 最大流量约束
-    m.addConstr(x[k, i, j] <= capacity[k, i, j])
+    m.addConstrs(x[k, i, j] <= capacity[k, i, j] for k in commodities)
     if i == 1 or j == 6:
         continue
     else:
@@ -39,16 +41,15 @@ m.addConstrs(
 m.addConstrs(
     gp.quicksum(x[k, i, 6] for i in range(1, 6) if (k, i, 6) in arcs.select(k, '*', 6)) == 3 for k in commodities)
 
-m.setObjective(gp.quicksum(cost[k, i, j] * x[k, i, j] for (k, i, j) in arcs), GRB.MINIMIZE)
-
 # Compute optimal solution
-m.optimize()
 
+m.optimize()
+# m.display()
 # Print solution
 if m.status == GRB.OPTIMAL:
     solution = m.getAttr('x', x)
     for h in commodities:
         print('\nOptimal flows for %s:' % h)
-        for h, i, j in arcs:
+        for _, i, j in arcs:
             if solution[h, i, j] > 0:
                 print('%s -> %s: %g' % (i, j, solution[h, i, j]))

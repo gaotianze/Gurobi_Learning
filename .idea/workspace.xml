@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19af9d08-78a4-4e57-ba66-a8a06d9a80bf" name="更改" comment="更改" />
+    <list default="true" id="19af9d08-78a4-4e57-ba66-a8a06d9a80bf" name="更改" comment="更改">
+      <change afterPath="$PROJECT_DIR$/Chapter2_Freight_Train_Formation_Plan_Problems/Benders_Decomposition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Gurobi_Learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Gurobi_Learning.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter1_Knowing_About_Gurobi/Linear_Programming.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter1_Knowing_About_Gurobi/Linear_Programming.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter1_Knowing_About_Gurobi/Shortest_Path.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter1_Knowing_About_Gurobi/Shortest_Path.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter1_Knowing_About_Gurobi/Shortest_Path_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter1_Knowing_About_Gurobi/Shortest_Path_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter1_Knowing_About_Gurobi/Transportation_Problem.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter1_Knowing_About_Gurobi/Transportation_Problem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter2_Freight_Train_Formation_Plan_Problems/Maximum_Flow_Problem.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_Freight_Train_Formation_Plan_Problems/Maximum_Flow_Problem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter2_Freight_Train_Formation_Plan_Problems/Minimum_Costflow_Problem.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_Freight_Train_Formation_Plan_Problems/Minimum_Costflow_Problem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter2_Freight_Train_Formation_Plan_Problems/Multy_Commodity_Problem.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2_Freight_Train_Formation_Plan_Problems/Multy_Commodity_Problem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preface/Preface_1_Basic_Steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/Preface/Preface_1_Basic_Steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preface/Preface_2_Auxiliary_Functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Preface/Preface_2_Auxiliary_Functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preface/Preface_3_Start_Modelling.py" beforeDir="false" afterPath="$PROJECT_DIR$/Preface/Preface_3_Start_Modelling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preface/Preface_4_Examples.py" beforeDir="false" afterPath="$PROJECT_DIR$/Preface/Preface_4_Examples.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +33,17 @@
       <list>
         <option value="Python Script" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
@@ -27,9 +59,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Chapter2_Freight_Train_Formation_Plan_Problems" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Python.Multy_Commodity_Problem">
-    <configuration name="Minimum_Costflow_Problem" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\个人资料\Gurobi_Learning\Chapter2_Freight_Train_Formation_Plan_Problems" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Benders_Decomposition">
+    <configuration name="Benders_Decomposition" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Gurobi_Learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -42,7 +81,73 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Chapter2_Freight_Train_Formation_Plan_Problems/Minimum_Costflow_Problem.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Chapter2_Freight_Train_Formation_Plan_Problems/Benders_Decomposition.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Column_Generation (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Gurobi_Learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Chapter2_Freight_Train_Formation_Plan_Problems" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Chapter2_Freight_Train_Formation_Plan_Problems/Column_Generation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Column_Generation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Gurobi_Learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Chapter1_Knowing_About_Gurobi" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:\个人资料\Gurobi_Learning\Chapter2_Freight_Train_Formation_Plan_Problems\Column_Generation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Gurobi_重载铁路装车端编组站重载列车组合优化" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Gurobi_Learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Documents/WeChat Files/wxid_1535715375612/FileStorage/File/2021-11" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Documents/WeChat Files/wxid_1535715375612/FileStorage/File/2021-11/Gurobi_重载铁路装车端编组站重载列车组合优化.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -75,8 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Benders_Decomposition" />
+        <item itemvalue="Python.Column_Generation (1)" />
+        <item itemvalue="Python.Column_Generation" />
+        <item itemvalue="Python.Gurobi_重载铁路装车端编组站重载列车组合优化" />
         <item itemvalue="Python.Multy_Commodity_Problem" />
-        <item itemvalue="Python.Minimum_Costflow_Problem" />
       </list>
     </recent_temporary>
   </component>
@@ -90,14 +198,43 @@
       <updated>1634556609942</updated>
       <workItem from="1636098717335" duration="566000" />
       <workItem from="1636099327701" duration="12277000" />
+      <workItem from="1636190853637" duration="1294000" />
+      <workItem from="1636338013686" duration="6213000" />
+      <workItem from="1636518264750" duration="3612000" />
+      <workItem from="1636545844632" duration="933000" />
+      <workItem from="1636596202486" duration="7882000" />
+      <workItem from="1636609524538" duration="2491000" />
+      <workItem from="1636614043517" duration="1377000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="更改" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Minimum_Costflow_Problem_py$Multy_Commodity_Problem.coverage" NAME="Multy_Commodity_Problem 覆盖结果" MODIFIED="1636114790696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter2_Freight_Train_Formation_Plan_Problems" />
+    <SUITE FILE_PATH="coverage/Column_Generation_py$Column_Generation__1_.coverage" NAME="Column_Generation (1) 覆盖结果" MODIFIED="1636609966547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter2_Freight_Train_Formation_Plan_Problems" />
     <SUITE FILE_PATH="coverage/Minimum_Costflow_Problem_py$Minimum_Costflow_Problem.coverage" NAME="Minimum_Costflow_Problem 覆盖结果" MODIFIED="1636112113911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter2_Freight_Train_Formation_Plan_Problems" />
+    <SUITE FILE_PATH="coverage/Column_Generation_py$Column_Generation.coverage" NAME="Column_Generation 覆盖结果" MODIFIED="1636608551090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter1_Knowing_About_Gurobi" />
+    <SUITE FILE_PATH="coverage/Multy_Commodity_Problem_py$Gurobi_.coverage" NAME="Gurobi_重载铁路装车端编组站重载列车组合优化 覆盖结果" MODIFIED="1636370317548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documents/WeChat Files/wxid_1535715375612/FileStorage/File/2021-11" />
+    <SUITE FILE_PATH="coverage/Multy_Commodity_Problem_py$Multy_Commodity_Problem.coverage" NAME="Multy_Commodity_Problem 覆盖结果" MODIFIED="1636358419191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter2_Freight_Train_Formation_Plan_Problems" />
+    <SUITE FILE_PATH="coverage/Multy_Commodity_Problem_py$Column_Generation.coverage" NAME="Column_Generation 覆盖结果" MODIFIED="1636371115666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter1_Knowing_About_Gurobi" />
+    <SUITE FILE_PATH="coverage/Benders_Decomposition_py$Benders_Decomposition.coverage" NAME="Benders_Decomposition 覆盖结果" MODIFIED="1636616635467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter2_Freight_Train_Formation_Plan_Problems" />
   </component>
 </project>
